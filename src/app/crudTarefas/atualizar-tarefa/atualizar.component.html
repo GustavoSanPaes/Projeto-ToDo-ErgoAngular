@@ -1,0 +1,34 @@
+<body>
+  <section>
+    <div class="container-form">
+    <form (ngSubmit)="atualizarTarefa()">
+      <div>
+        <input
+          type="text"
+          name="text"
+          [(ngModel)]="tarefa.compromisso"
+          (input)="onKeyUp()"
+        />
+        <div *ngIf="emptyInput == true" class="error">
+          Esse caampo é obrigatório
+        </div>
+      </div>
+
+      <button>Atualizar</button>
+    </form>
+    <button (click)="cancel()">Cancelar</button>
+  </div>
+  </section>
+</body>
+
+<div class="card">
+  <div class="card-body">
+    <img
+      width="100px"
+      height="100px"
+      src="assets/img/xicara-ergotarefaonline.png"
+    />
+    <h3>Érgo, ajudando você a se organizar!</h3>
+    <i class="material-icons">engineering</i>
+  </div>
+</div>

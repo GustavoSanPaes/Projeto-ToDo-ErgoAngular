@@ -1,0 +1,65 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-weight:bolder;
+}
+
+section{
+  background-color:#062d36;
+}
+
+button i{
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  height: 36px;
+  width: 80px;
+  background-color: #0c4b58;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 50px;
+  font-weight: 400;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+}
+button:hover{
+  background-color: #0e7991;
+  transition: .5s;
+}
+
+.marcarTarefa{
+  width: 25px;
+  height: 25px;
+  background-color: #0e7991;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border: solid #062d36;
+  
+  
+}
+
+.contexto{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+
+.info{
+  display: flex;
+}

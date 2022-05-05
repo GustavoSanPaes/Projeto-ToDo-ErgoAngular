@@ -1,0 +1,45 @@
+<h1>Lista de tarefas</h1>
+<section class="container" *ngFor="let tarefa of listaTarefas">
+    <div class="contexto" *ngIf="tarefa.status == false">
+    
+      <div class="info">
+        <button (click)="marcarTarefa(tarefa.status!, tarefa.id!)"
+        class="marcarTarefa">
+       </button>
+  
+  
+      <p>{{ tarefa.compromisso }}</p>
+      </div>
+  
+      <div>
+        <button class="a" routerLink="/atualizar/{{ tarefa.id }}" class="material-icons">update
+        </button>
+        <button (click)="deletarTarefa(tarefa.id!)" class="material-icons">delete</button>
+      </div>
+    </div>
+</section>
+
+<h1>Tarefa Finalizada</h1>
+
+<section class="container" *ngFor="let tarefa of listaTarefas">
+
+    <div class="contexto"  *ngIf="tarefa.status == true">
+    
+      <div class="info">
+        <button (click)="marcarTarefa(tarefa.status!, tarefa.id!)"
+        class="marcarTarefa">
+        <span *ngIf="tarefa.status == true" class="material-icons" title="Para desmarcar a tarefa click no botão"
+      >done</span></button>
+  
+  
+      <p>{{ tarefa.compromisso }}</p>
+      </div>
+  
+      <div>
+        <button class="a" routerLink="/atualizar/{{ tarefa.id }}" class="material-icons">update
+        </button>
+        <button (click)="deletarTarefa(tarefa.id!)" class="material-icons">delete</button>
+      </div>
+    </div>
+
+</section>

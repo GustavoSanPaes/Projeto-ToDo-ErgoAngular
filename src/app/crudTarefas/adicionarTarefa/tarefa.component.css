@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+h1{
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Tapestry';
+  background-color: #062d36;
+  color:white;
+  margin: 0;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-body{
+  width: 100%;
+    display: flex;
+    background-color: #062d36;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+  width:100%;
+  background-color: #062d36;
+}
+
+section{
+  background-color: #062d36;
+  min-height: 60px;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input_container{
+  background-color: white;
+  width: 400px;
+  margin: auto;
+  margin-top: -70px;
+  border-radius: 50px;
+  box-shadow: 2px 3px 3px 2px gray;
+  cursor: pointer;
+}
+
+.input_container h3{
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+input{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 180px;
+  height: 35px;
+  border: 3px solid gray;
+  border-radius: 50px;
+  margin-right: 5px;
+  outline: 2;
+  align-items: center;
+
+}
+button i{
+  margin-right: 15px;
+}
+button{
+  height: 36px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #0c4b58;
+  color:white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #0e7991;
+  transition: .5s;
+}
+ul{
+  display: flex;
+  align-items: center;
+  margin: 2;
+}
+ul li{
+  height: 36px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #0c4b58;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  align-items: center;
+}
+
+ul li:hover {
+background: #235a66;
+}

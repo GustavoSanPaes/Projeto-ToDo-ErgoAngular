@@ -1,0 +1,20 @@
+
+<h1><span class="material-icons">checklist_rtl</span>Érgo - Gerenciador de Tarefas</h1>
+
+
+<div class="card">
+  <div class="card-body">
+    <img width="100px" height="100px" src="assets/img/xicara-ergotarefaonline.png">
+
+</div>
+
+<section>
+  <form (ngSubmit)="novaTarefa()">
+    <input type="text" name="text" [(ngModel)]="tarefa.compromisso" (input)="onKeyUp()">
+    <button>Adicionar</button>
+    <div  class="error" *ngIf="emptyInput == true">Este campo é obrigatório</div>
+  </form>
+
+
+</section>
+

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.error{
+  color:red;
+  background-color: #ff9;
+  border:5px solid red;
+  padding: 5px;
+  margin: 20px 0px;
+  text-align: center;
+}
